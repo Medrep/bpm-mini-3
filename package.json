@@ -1,0 +1,13 @@
+{
+  "name": "my-bpm-mini",
+  "private": true,
+  "packageManager": "pnpm@10.32.1",
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "dev:web": "pnpm --filter web dev",
+    "dev:extension": "pnpm --filter extension dev",
+    "build": "pnpm --filter web build && pnpm --filter extension build",
+    "lint": "pnpm --filter web lint",
+    "typecheck": "pnpm --filter web typecheck && pnpm --filter extension typecheck"
+  }
+}

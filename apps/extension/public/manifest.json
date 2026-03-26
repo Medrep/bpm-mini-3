@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "My BPM Mini",
+  "description": "LinkedIn lead lookup and capture for My BPM Mini.",
+  "version": "0.0.0",
+  "permissions": ["activeTab", "storage", "tabs"],
+  "host_permissions": [
+    "https://www.linkedin.com/*",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "My BPM Mini",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

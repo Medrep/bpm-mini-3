@@ -1,0 +1,195 @@
+:root {
+  color-scheme: light;
+  font-family:
+    ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(14, 116, 144, 0.18), transparent 36%),
+    linear-gradient(180deg, #fbf8f1 0%, #f4f2eb 100%);
+  color: #0f172a;
+}
+
+body {
+  margin: 0;
+  min-width: 360px;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  padding: 18px;
+}
+
+.app-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 22px 45px rgba(15, 23, 42, 0.08);
+  padding: 18px;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.brand-kicker,
+.panel-kicker {
+  margin: 0;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #0f766e;
+}
+
+.brand-title,
+.panel-title {
+  margin: 6px 0 0;
+  font-size: 22px;
+  line-height: 1.05;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.brand-copy,
+.panel-copy {
+  margin: 6px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #475569;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(203, 213, 225, 0.8);
+  background: rgba(248, 250, 252, 0.9);
+  padding: 16px;
+}
+
+.panel-muted {
+  align-items: center;
+  justify-content: center;
+  min-height: 220px;
+  text-align: center;
+}
+
+.panel-danger {
+  background: rgba(254, 242, 242, 0.95);
+  border-color: rgba(252, 165, 165, 0.8);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 14px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  padding: 10px 12px;
+  color: #0f172a;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #0f766e;
+  box-shadow: 0 0 0 4px rgba(15, 118, 110, 0.12);
+}
+
+.input-readonly {
+  background: #f8fafc;
+  color: #64748b;
+}
+
+.button {
+  border: 0;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #0f766e 0%, #155e75 100%);
+  color: #ffffff;
+  padding: 11px 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.button-secondary {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.button-ghost {
+  background: transparent;
+  color: #0f766e;
+  border: 1px solid rgba(15, 118, 110, 0.22);
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+}
+
+.spinner {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 3px solid rgba(15, 118, 110, 0.2);
+  border-top-color: #0f766e;
+  animation: spin 0.8s linear infinite;
+}
+
+.inline-message {
+  margin: 0;
+  font-size: 12px;
+  color: #155e75;
+}
+
+.warning-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.warning-item {
+  margin: 0;
+  border-radius: 12px;
+  background: rgba(253, 230, 138, 0.35);
+  color: #854d0e;
+  padding: 8px 10px;
+  font-size: 12px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+

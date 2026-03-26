@@ -1,0 +1,20 @@
+{
+  "name": "@my-bpm-mini/shared",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schemas/candidates": "./src/schemas/candidates.ts",
+    "./constants/lead-statuses": "./src/constants/lead-statuses.ts",
+    "./schemas/extension": "./src/schemas/extension.ts",
+    "./schemas/leads": "./src/schemas/leads.ts",
+    "./types/candidates": "./src/types/candidates.ts",
+    "./types/extension": "./src/types/extension.ts",
+    "./types/leads": "./src/types/leads.ts",
+    "./utils/linkedin": "./src/utils/linkedin.ts"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  }
+}
